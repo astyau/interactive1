@@ -1,0 +1,37 @@
+body {
+  background-color: magenta
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: pink;
+}
+
+
+.inner-shape {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  float: left;
+}
+
+.outer-shape {
+  width: 600px;
+  height: 600px;
+  background: red;
+}
+
+.outer-shape:hover>.inner-shape {
+  background: pink;
+}
+
+div:hover~div {
+  background: orange;
+}
+
+.outer-shape:hover .inner-shape:nth-child(even) {
+  background: orange;
+}
