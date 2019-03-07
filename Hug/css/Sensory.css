@@ -1,29 +1,30 @@
 .img {
-    margin: 300px;
+    margin: 600px;
 }
 
 .question {
-    margin: 300px;
+    margin: 200px;
     font-size: 35px;
     color: pink
 }
 
 .outer-shape {
-    width: 60px;
-    height: 60px;
-    margin: 200px;
-    background: red;
+    width: 30px;
+    height: 30px;
+    margin: 100px;
+    background: orange;
 }
 
 .inner-shape {
-    height: 30px;
-    width: 30px;
-    background: white;
+    height: 60px;
+    width: 60px;
+    background: pink;
 }
 
 .outer-shape:hover>.inner-shape {
-    background: pink;
+    background: red
 }
+
 
 h1:hover {
     color: red

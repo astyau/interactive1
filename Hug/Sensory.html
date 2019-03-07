@@ -10,17 +10,33 @@
 </head>
 
 <body>
+    <button onclick="typeWriter()">need a hug?</button>
+
+    <p id="button"></p>
+
+    <script>
+        var i = 0;
+        var txt = 'scroll down';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("button").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+    <div class="outer-shape">
+        <div class="inner-shape"></div>
+    </div>
     <div class="outer-shape">
         <div class="inner-shape"></div>
     </div>
 
-    <div class="question">
-        <h1>
-            <p style="font-family:courier;">What does this feel like?</p>
-        </h1>
-        <div class="img">
-            <img src="twohearts.gif" alt="hearthug" style="width:450px;height:450px;">
-        </div class="img">
+    <div class="img">
+        <img src="twohearts.gif" alt="hearthug" style="width:450px;height:450px;">
+    </div class="img">
 
     </div class="question">
 
