@@ -1,37 +1,30 @@
-body {
-  background-color: magenta
+.img {
+  margin: 300px;
 }
 
-a {
-  color: red;
-}
-
-a:hover {
-  color: pink;
-}
-
-
-.inner-shape {
-  width: 100px;
-  height: 100px;
-  background: blue;
-  float: left;
+.question {
+  margin: 300px;
+  font-size: 35px;
+  color: pink
 }
 
 .outer-shape {
-  width: 600px;
-  height: 600px;
+  width: 60px;
+  height: 60px;
+  margin: 200px;
   background: red;
+}
+
+.inner-shape {
+  height: 30px;
+  width: 30px;
+  background: white;
 }
 
 .outer-shape:hover>.inner-shape {
   background: pink;
 }
 
-div:hover~div {
-  background: orange;
-}
-
-.outer-shape:hover .inner-shape:nth-child(even) {
-  background: orange;
+h1:hover {
+  color: red
 }
